@@ -9,7 +9,7 @@ périphérique (PC, Téléphone, Tablette). Elle consiste à avoir une
 interface simple de modification de tableau (d’autres onglets pourront
 être rajoutés par la suite si besoin). L’interface ressemble à ceci :
 
-![screen\_shiny\_app](screen_shiny_1.png)
+![screen\_shiny\_app](www/screen_shiny_1.png)
 
 ## Fonctionnement de l’application
 

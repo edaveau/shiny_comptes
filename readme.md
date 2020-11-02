@@ -13,16 +13,22 @@ interface simple de modification de tableau (d’autres onglets pourront
 
 ## Fonctionnement de l’application
 
-Vous pouvez avec cette application : \* Ajouter de nouvelles lignes de
-facturation : *En cliquant sur “Nouvelle facture”, une nouvelle ligne
-apparaîtra avec des valeurs par défaut que vous pourrez modifier* \*
-Modifier des lignes existantes : *Si vous double cliquez sur une valeur
-dans n’importe quelle colonne, vous pourrez alors la modifier* \*
-Supprimer des lignes sélectionnées : *Vous pouvez sélectionnder des
-lignes en cliquant dessus, puis en cliquant sur “Supprimer la
-sélection”, les lignes sélectionnées seront supprimées* **IMPORTANT :
-Une fois vos modifications supprimées, n’oubliez pas de cliquer sur
-“Sauvegarder” pour que vos données soient conservées**
+Vous pouvez avec cette application :
+
+  - Ajouter de nouvelles lignes de facturation : *En cliquant sur
+    “Nouvelle facture”, une nouvelle ligne apparaîtra avec des valeurs
+    par défaut que vous pourrez modifier*
+
+  - Modifier des lignes existantes : *Si vous double cliquez sur une
+    valeur dans n’importe quelle colonne, vous pourrez alors la
+    modifier*
+
+  - Supprimer des lignes sélectionnées : *Vous pouvez sélectionnder des
+    lignes en cliquant dessus, puis en cliquant sur “Supprimer la
+    sélection”, les lignes sélectionnées seront supprimées*
+
+**IMPORTANT : Une fois vos modifications supprimées, n’oubliez pas de
+cliquer sur “Sauvegarder” pour que vos données soient conservées**
 
 L’infobulle de total des factures et de reste à payer se mettront
 automatiquement à jour en fonction des données que vous entrerez. La

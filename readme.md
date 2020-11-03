@@ -48,3 +48,34 @@ un travail en cours)*.
 Ce code est parfaitement libre, n’hésitez pas à le télécharger ou
 modifier si vous le souhaitez. Il a été réalisé avec RStudio (v1.3.9013)
 sous R v4.0.3 *(Bunny-Wunnies Freak Out)*.
+
+## Installation
+
+      Bien sûr, je décrirai ici la méthode d’installation de
+l’application sur un système Linux (Debian ou Ubuntu), qui est bien
+plus simple et plus directe que sur Windows (je ne sais pas si l’on peut
+implémenter un serveur Shiny sous Windows).
+
+### Prérequis
+
+Voici la procédure pour installer l’application sur Ubuntu. Tout
+d’abord, téléchargez R et Shiny :
+
+> \# Installer R :
+> <https://cran.r-project.org/bin/linux/ubuntu/README.html>
+
+> \# Installer Shiny :
+> <https://rstudio.com/products/shiny/download-server/ubuntu/>
+
+Ensuite, installez Git et configurez le :
+
+> sudo apt-get install git-core git config –global user.name “Your Name”
+> git config –global user.name “<your.email.address@mail.com>”
+
+Téléchargez le répertoire vers votre serveur Shiny
+
+> sudo git clone <https://github.com/edaveau/shiny_comptes>
+> /srv/shiny-server/shiny\_comptes
+
+Si vous allez ensuite sur **localhost:3838/shiny\_comptes**,
+l’application sera disponible.

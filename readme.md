@@ -62,23 +62,37 @@ Voici la procédure pour installer l’application sur Ubuntu. Tout
 d’abord, téléchargez R et Shiny :
 
 > \# Installer R :
-> <https://cran.r-project.org/bin/linux/ubuntu/README.html>
-
-> \# Installer Shiny :
+> <https://cran.r-project.org/bin/linux/ubuntu/README.html> <br> \#
+> Installer Shiny :
 > <https://rstudio.com/products/shiny/download-server/ubuntu/>
 
 Ensuite, installez Git et configurez le :
 
-> sudo apt-get install git-core
+> sudo apt-get install git-core <br> git config –global user.name “Your
+> Name” <br> git config –global user.name
+> “<your.email.address@mail.com>”
 
-> git config –global user.name “Your Name”
-
-> git config –global user.name “<your.email.address@mail.com>”
+### Téléchargement et installation
 
 Téléchargez le répertoire vers votre serveur Shiny
 
 > sudo git clone <https://github.com/edaveau/shiny_comptes>
 > /srv/shiny-server/shiny\_comptes
 
-Si vous allez ensuite sur **localhost:3838/shiny\_comptes**,
-l’application sera disponible.
+Installez ensuite le package *“renv”* dont vous aurez besoin pour
+installer les dépendances.
+
+> sudo su - -c “R -e "install.packages(‘renv’,
+> repos=‘<https://cran.rstudio.com/>’)"”
+
+Il ne vous reste plus qu’à activer *“renv”* pour installer les
+dépendances :
+
+> cd /srv/shiny-server/shiny\_comptes <br> sudo su shiny - -c “R -e
+> "renv::restore()"”
+
+***A noter*** : *Pour télécharger les sources, R utilise curl,
+assurez-vous donc que curl soit bien installé sur votre système.*
+
+**Si vous allez ensuite sur l’URL suivante localhost:3838/shiny\_comptes
+dans votre navigateur préféré, l’application sera disponible.**

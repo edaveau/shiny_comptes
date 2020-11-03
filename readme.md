@@ -69,7 +69,10 @@ d’abord, téléchargez R et Shiny :
 
 Ensuite, installez Git et configurez le :
 
-> sudo apt-get install git-core git config –global user.name “Your Name”
+> sudo apt-get install git-core
+
+> git config –global user.name “Your Name”
+
 > git config –global user.name “<your.email.address@mail.com>”
 
 Téléchargez le répertoire vers votre serveur Shiny

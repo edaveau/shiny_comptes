@@ -88,7 +88,7 @@ installer les dépendances.
 Il ne vous reste plus qu’à activer *“renv”* pour installer les
 dépendances :
 
-> cd /srv/shiny-server/shiny\_comptes <br> sudo su shiny - -c “R -e
+> cd /srv/shiny-server/shiny\_comptes <br> sudo su - -c “R -e
 > "renv::restore()"”
 
 ***A noter*** : *Pour télécharger les sources, R utilise curl,

@@ -1,5 +1,6 @@
 dashboardPage(
   
+  title = "ImaUnicorn",
   skin = "green",
   
   # Content of the app header
@@ -38,6 +39,7 @@ dashboardPage(
                        column(width = 2, 
                               valueBoxOutput("bills_total", width = 12)))
       )
-    )
+    ),
+    tags$head(tags$link(rel = "shortcut icon", href = "favicon.ico"))
   )
 )

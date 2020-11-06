@@ -86,10 +86,12 @@ installer les dépendances.
 > repos=‘<https://cran.rstudio.com/>’)\\""
 
 Il ne vous reste plus qu’à activer *“renv”* pour installer les
-dépendances :
+dépendances. Faites attention, si vous faites un copier coller, car il
+est possible que les caractères " et ’ soient mal copiés (n’hésitez pas
+alors à les remplacer dans votre éditeur de texte favori) :
 
 > cd /srv/shiny-server/shiny\_comptes <br> sudo su - -c “R -e
-> \\”renv::restore()\\""
+> \\”renv::consent()\\"" sudo su - -c “R -e \\”renv::restore()\\""
 
 ***A noter*** : *Pour télécharger les sources, R utilise curl,
 assurez-vous donc que curl soit bien installé sur votre système.*

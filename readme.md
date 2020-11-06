@@ -91,7 +91,8 @@ est possible que les caractères " et ’ soient mal copiés (n’hésitez pas
 alors à les remplacer dans votre éditeur de texte favori) :
 
 > cd /srv/shiny-server/shiny\_comptes <br> R <br> renv::consent(provided
-> = TRUE) <br> renv::restore()
+> = TRUE) <br> renv::restore() <br> q() <br> sudo chmod 664
+> /srv/shiny-server/shinycomptes/data.csv
 
 ***A noter*** : *Pour télécharger les sources, R utilise curl,
 assurez-vous donc que curl soit bien installé sur votre système.*

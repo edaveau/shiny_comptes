@@ -65,7 +65,9 @@ Il ne vous reste plus qu'à activer *"renv"* pour installer les dépendances. Fa
 > cd /srv/shiny-server/shiny_comptes <br>
 > R <br>
 > renv::consent(provided = TRUE) <br>
-> renv::restore()
+> renv::restore() <br>
+> q() <br>
+> sudo chmod 664 /srv/shiny-server/shinycomptes/data.csv
 
 **_A noter_** : _Pour télécharger les sources, R utilise curl, assurez-vous donc que curl soit bien installé sur votre système._
 

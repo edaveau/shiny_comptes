@@ -82,14 +82,14 @@ Téléchargez le répertoire vers votre serveur Shiny
 Installez ensuite le package *“renv”* dont vous aurez besoin pour
 installer les dépendances.
 
-> sudo su - -c “R -e "install.packages(‘renv’,
-> repos=‘<https://cran.rstudio.com/>’)"”
+> sudo su - -c “R -e \\”install.packages(‘renv’,
+> repos=‘<https://cran.rstudio.com/>’)\\""
 
 Il ne vous reste plus qu’à activer *“renv”* pour installer les
 dépendances :
 
 > cd /srv/shiny-server/shiny\_comptes <br> sudo su - -c “R -e
-> "renv::restore()"”
+> \\”renv::restore()\\""
 
 ***A noter*** : *Pour télécharger les sources, R utilise curl,
 assurez-vous donc que curl soit bien installé sur votre système.*

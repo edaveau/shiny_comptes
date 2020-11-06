@@ -76,7 +76,7 @@ Ensuite, installez Git et configurez le :
 
 Téléchargez le répertoire vers votre serveur Shiny
 
-> sudo git clone <https://github.com/edaveau/shiny_comptes>
+> git clone <https://github.com/edaveau/shiny_comptes>
 > /srv/shiny-server/shiny\_comptes
 
 Installez ensuite le package *“renv”* dont vous aurez besoin pour
@@ -90,8 +90,8 @@ dépendances. Faites attention, si vous faites un copier coller, car il
 est possible que les caractères " et ’ soient mal copiés (n’hésitez pas
 alors à les remplacer dans votre éditeur de texte favori) :
 
-> cd /srv/shiny-server/shiny\_comptes <br> sudo su - -c “R -e
-> \\”renv::consent()\\"" sudo su - -c “R -e \\”renv::restore()\\""
+> cd /srv/shiny-server/shiny\_comptes <br> R <br> renv::consent(provided
+> = TRUE) <br> renv::restore()
 
 ***A noter*** : *Pour télécharger les sources, R utilise curl,
 assurez-vous donc que curl soit bien installé sur votre système.*

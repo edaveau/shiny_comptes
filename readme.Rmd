@@ -54,7 +54,7 @@ Ensuite, installez Git et configurez le :
 
 Téléchargez le répertoire vers votre serveur Shiny
 
-> sudo git clone https://github.com/edaveau/shiny_comptes /srv/shiny-server/shiny_comptes
+> git clone https://github.com/edaveau/shiny_comptes /srv/shiny-server/shiny_comptes
 
 Installez ensuite le package *"renv"* dont vous aurez besoin pour installer les dépendances.
 
@@ -63,8 +63,9 @@ Installez ensuite le package *"renv"* dont vous aurez besoin pour installer les 
 Il ne vous reste plus qu'à activer *"renv"* pour installer les dépendances. Faites attention, si vous faites un copier coller, car il est possible que les caractères " et ' soient mal copiés (n'hésitez pas alors à les remplacer dans votre éditeur de texte favori) :
 
 > cd /srv/shiny-server/shiny_comptes <br>
-> sudo su - -c "R -e \\"renv::consent()\\""
-> sudo su - -c "R -e \\"renv::restore()\\""
+> R <br>
+> renv::consent(provided = TRUE) <br>
+> renv::restore()
 
 **_A noter_** : _Pour télécharger les sources, R utilise curl, assurez-vous donc que curl soit bien installé sur votre système._
 

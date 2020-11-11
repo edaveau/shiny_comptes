@@ -7,8 +7,9 @@ function(input, output, session){
               editable = "cell",                     # Make the cells editable
               rownames = FALSE,                      # Hide the rownames (linkd with "bills_cell_edit")
               colnames = c("Prélèvement", "Jour", "Montant"),
-              options = list(lengthChange = FALSE,   # Hide Unnecessary information
-                             searching = FALSE)) %>%
+              options = list(lengthChange = TRUE,   # Hide Unnecessary information
+                             searching = FALSE, 
+                             pageLength = 20)) %>%
       formatStyle(columns = "jour",
                   target = "row",
                   backgroundColor = styleInterval(cuts = current_day, values = c("#06D59A", "white"))) %>%

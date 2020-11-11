@@ -6,7 +6,7 @@ dashboardPage(
   # Content of the app header
   dashboardHeader(
     title = span(textOutput("header_title"), 
-                 style = "font-weight: bold;")
+                 style = "font-weight: bold; font-size: 90%;")
   ),
   
   # Content of the app sidebar

@@ -31,7 +31,9 @@ function(input, output, session){
 
   # Render the reactive valueBox for the money left to pay
   output$bills_total <- renderValueBox({
-    valueBox(value = paste0(as.character(sum(values$df$montant)), "€"), 
+    valueBox(value = tags$p(
+                            paste0(as.character(sum(values$df$montant)), "€"),
+                            style = "font-size:60%;"), 
              subtitle = "Montant total",
              color = "olive",
              icon = icon(name = "wallet", lib = "font-awesome"))

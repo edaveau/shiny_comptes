@@ -9,8 +9,6 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## But de l'application
 
-Ceci est une ligne de test.
-
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cette application a été développée afin de pouvoir avoir une application simple de suivi de comptes accessible depuis n'importe quel périphérique (PC, Téléphone, Tablette). Elle consiste à avoir une interface simple de modification de tableau (d'autres onglets pourront être rajoutés par la suite si besoin). L'interface ressemble à ceci :
 
 ![screen_shiny_app](www/screen_shiny_1.png)

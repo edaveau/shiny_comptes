@@ -62,7 +62,8 @@ Démarrez le container :
 
 > docker run -it --rm --name mescomptes -p 3838:3838 shiny/comptes:1.0
 
-Rendez-vous alors sur localhost:3838 pour avoir accès à l'application. Notez que pour des questions de persistence de données, il vaut mieux monter le fichier www/data.csv depuis votre PC (ou le fichier sera perdu au redémarrage du container).
+Rendez-vous alors sur http://localhost:3838 pour avoir accès à l'application. Notez que pour des questions de persistence de données, il vaut mieux monter le fichier www/data.csv depuis votre PC (ou le fichier sera perdu au redémarrage du container). **Je tiens à porter en effet à votre attention que le fichier de données est dans le container sans ce montage, donc si vous perdez votre container sans avoir monté le volume, vous perdrez vos données.**
+L'option à rajouter dans votre commande `docker run` est alors `-v /path/to/data.csv:/srv/shiny-server/comptes/www/data.csv`.
 
 ## Installation
 
